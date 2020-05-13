@@ -1,0 +1,38 @@
+openapi: 3.0.0
+info:
+  title: car
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /car:
+    get:
+      summary: get car
+      tags: []
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    color:
+                      type: string
+                    year:
+                      type: integer
+      operationId: get-car
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+components:
+  schemas: {}
