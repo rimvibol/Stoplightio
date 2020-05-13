@@ -25,14 +25,14 @@ paths:
                       type: string
                     year:
                       type: number
+              examples:
+                example-1: {}
       operationId: get-car
       requestBody:
         content:
           application/json:
             schema:
               type: object
-              properties:
-                name:
-                  type: string
+        description: ''
 components:
   schemas: {}
