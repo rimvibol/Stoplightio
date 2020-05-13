@@ -24,7 +24,7 @@ paths:
                     color:
                       type: string
                     year:
-                      type: integer
+                      type: number
       operationId: get-car
       requestBody:
         content:
